@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="auth-container">
+        <h1>Welcome</h1>
+        <label for="role">Are you an Admin or Employee?</label>
+        <select id="role">
+            <option value="admin">Admin</option>
+            <option value="employee">Employee</option>
+        </select>
+        <input type="password" id="password" placeholder="Enter Password" required>
+        <button id="login-btn">Login</button>
+    </div>
+
+    <div id="dashboard" class="hidden">
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <ul id="menu"></ul>
+        </div>
+        <div class="main-content">
+            <h2>Employee List</h2>
+            <div id="employee-container"></div>
+        </div>
+    </div>
+
+    <div id="employee-details" class="hidden">
+        <button id="back-btn">Back</button>
+        <div id="details-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
